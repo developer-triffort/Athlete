@@ -1,0 +1,1493 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl
+android.support.v4.accessibilityservice.AccessibilityServiceInfoCompatIcs
+android.support.v4.app.ActivityCompat
+android.support.v4.app.ActivityCompatHoneycomb:
+    ActivityCompatHoneycomb()
+    static void startActivities(android.app.Activity,android.content.Intent[])
+    static void dump(android.app.Activity,java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+android.support.v4.app.BackStackRecord:
+    static final java.lang.String TAG
+    static final int OP_NULL
+    static final int OP_ADD
+    static final int OP_REPLACE
+    static final int OP_REMOVE
+    static final int OP_HIDE
+    static final int OP_SHOW
+    static final int OP_DETACH
+    static final int OP_ATTACH
+    public int getId()
+    public int getBreadCrumbTitleRes()
+    public int getBreadCrumbShortTitleRes()
+    public java.lang.CharSequence getBreadCrumbTitle()
+    public java.lang.CharSequence getBreadCrumbShortTitle()
+    public android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    public android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    public android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment)
+    public android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment)
+    public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    public android.support.v4.app.FragmentTransaction setTransition(int)
+    public android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public boolean isAddToBackStackAllowed()
+    public android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    public int commit()
+    public int getTransition()
+    public int getTransitionStyle()
+    public boolean isEmpty()
+android.support.v4.app.DialogFragment
+android.support.v4.app.Fragment:
+    static final int INITIALIZING
+    static final int CREATED
+    static final int ACTIVITY_CREATED
+    static final int STOPPED
+    static final int STARTED
+    static final int RESUMED
+    public final int getId()
+    public final java.lang.String getTag()
+    public void setArguments(android.os.Bundle)
+    public final android.os.Bundle getArguments()
+    public void setTargetFragment(android.support.v4.app.Fragment,int)
+    public final android.support.v4.app.Fragment getTargetFragment()
+    public final int getTargetRequestCode()
+    public final android.content.res.Resources getResources()
+    public final java.lang.CharSequence getText(int)
+    public final java.lang.String getString(int)
+    public final varargs java.lang.String getString(int,java.lang.Object[])
+    public final android.support.v4.app.FragmentManager getFragmentManager()
+    public final boolean isDetached()
+    public final boolean isRemoving()
+    public final boolean isInLayout()
+    public final boolean isResumed()
+    public final boolean isVisible()
+    public void setRetainInstance(boolean)
+    public final boolean getRetainInstance()
+    public void setHasOptionsMenu(boolean)
+    public void setUserVisibleHint(boolean)
+    public boolean getUserVisibleHint()
+    public android.support.v4.app.LoaderManager getLoaderManager()
+    public void startActivity(android.content.Intent)
+    public void startActivityForResult(android.content.Intent,int)
+    public void registerForContextMenu(android.view.View)
+    public void unregisterForContextMenu(android.view.View)
+android.support.v4.app.FragmentActivity:
+    private static final java.lang.String TAG
+    private static final java.lang.String FRAGMENTS_TAG
+    private static final int HONEYCOMB
+    static final int MSG_REALLY_STOPPED
+    static final int MSG_RESUME_PENDING
+    public java.lang.Object getLastCustomNonConfigurationInstance()
+    public void startActivityFromFragment(android.support.v4.app.Fragment,android.content.Intent,int)
+    public android.support.v4.app.LoaderManager getSupportLoaderManager()
+android.support.v4.app.FragmentActivity$FragmentTag:
+    public static final int Fragment_id
+    public static final int Fragment_name
+    public static final int Fragment_tag
+    FragmentActivity$FragmentTag()
+android.support.v4.app.FragmentManager:
+    public static final int POP_BACK_STACK_INCLUSIVE
+    public android.support.v4.app.FragmentTransaction openTransaction()
+    public abstract android.support.v4.app.Fragment findFragmentById(int)
+    public abstract android.support.v4.app.Fragment findFragmentByTag(java.lang.String)
+    public abstract void popBackStack()
+    public abstract boolean popBackStackImmediate()
+    public abstract void popBackStack(java.lang.String,int)
+    public abstract boolean popBackStackImmediate(java.lang.String,int)
+    public abstract void popBackStack(int,int)
+    public abstract boolean popBackStackImmediate(int,int)
+    public abstract int getBackStackEntryCount()
+    public abstract android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public abstract void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    public static void enableDebugLogging(boolean)
+android.support.v4.app.FragmentManager$BackStackEntry
+android.support.v4.app.FragmentManagerImpl:
+    static final java.lang.String TAG
+    static final java.lang.String TARGET_REQUEST_CODE_STATE_TAG
+    static final java.lang.String TARGET_STATE_TAG
+    static final java.lang.String VIEW_STATE_TAG
+    static final java.lang.String USER_VISIBLE_HINT_TAG
+    static final int ANIM_DUR
+    public static final int ANIM_STYLE_OPEN_ENTER
+    public static final int ANIM_STYLE_OPEN_EXIT
+    public static final int ANIM_STYLE_CLOSE_ENTER
+    public static final int ANIM_STYLE_CLOSE_EXIT
+    public static final int ANIM_STYLE_FADE_ENTER
+    public static final int ANIM_STYLE_FADE_EXIT
+    public void popBackStack()
+    public void popBackStack(java.lang.String,int)
+    public boolean popBackStackImmediate(java.lang.String,int)
+    public void popBackStack(int,int)
+    public boolean popBackStackImmediate(int,int)
+    public int getBackStackEntryCount()
+    public android.support.v4.app.FragmentManager$BackStackEntry getBackStackEntryAt(int)
+    public void addOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public void removeOnBackStackChangedListener(android.support.v4.app.FragmentManager$OnBackStackChangedListener)
+    public android.support.v4.app.Fragment findFragmentByWho(java.lang.String)
+android.support.v4.app.FragmentManagerImpl$2
+android.support.v4.app.FragmentManagerImpl$3
+android.support.v4.app.FragmentManagerImpl$4
+android.support.v4.app.FragmentPagerAdapter
+android.support.v4.app.FragmentStatePagerAdapter:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+android.support.v4.app.FragmentTransaction:
+    public static final int TRANSIT_ENTER_MASK
+    public static final int TRANSIT_EXIT_MASK
+    public static final int TRANSIT_UNSET
+    public static final int TRANSIT_NONE
+    public static final int TRANSIT_FRAGMENT_OPEN
+    public static final int TRANSIT_FRAGMENT_CLOSE
+    public static final int TRANSIT_FRAGMENT_FADE
+    public abstract android.support.v4.app.FragmentTransaction add(android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction add(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction replace(int,android.support.v4.app.Fragment,java.lang.String)
+    public abstract android.support.v4.app.FragmentTransaction hide(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction show(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction detach(android.support.v4.app.Fragment)
+    public abstract android.support.v4.app.FragmentTransaction attach(android.support.v4.app.Fragment)
+    public abstract boolean isEmpty()
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int)
+    public abstract android.support.v4.app.FragmentTransaction setCustomAnimations(int,int,int,int)
+    public abstract android.support.v4.app.FragmentTransaction setTransition(int)
+    public abstract android.support.v4.app.FragmentTransaction setTransitionStyle(int)
+    public abstract android.support.v4.app.FragmentTransaction addToBackStack(java.lang.String)
+    public abstract boolean isAddToBackStackAllowed()
+    public abstract android.support.v4.app.FragmentTransaction disallowAddToBackStack()
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbTitle(java.lang.CharSequence)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(int)
+    public abstract android.support.v4.app.FragmentTransaction setBreadCrumbShortTitle(java.lang.CharSequence)
+    public abstract int commit()
+android.support.v4.app.HCSparseArray:
+    public void setValueAt(int,java.lang.Object)
+    public int indexOfKey(int)
+    public int indexOfValue(java.lang.Object)
+    public void append(int,java.lang.Object)
+android.support.v4.app.ListFragment
+android.support.v4.app.ListFragment$1
+android.support.v4.app.ListFragment$2
+android.support.v4.app.LoaderManager:
+    public abstract android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public abstract void destroyLoader(int)
+    public abstract android.support.v4.content.Loader getLoader(int)
+    public abstract void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])
+    public static void enableDebugLogging(boolean)
+android.support.v4.app.LoaderManagerImpl:
+    static final java.lang.String TAG
+    boolean mRetainingStarted
+    boolean mCreatingLoader
+    private android.support.v4.app.LoaderManagerImpl$LoaderInfo createLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    private android.support.v4.app.LoaderManagerImpl$LoaderInfo createAndInstallLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public android.support.v4.content.Loader initLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public android.support.v4.content.Loader restartLoader(int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+    public void destroyLoader(int)
+    public android.support.v4.content.Loader getLoader(int)
+android.support.v4.app.LoaderManagerImpl$LoaderInfo:
+    public LoaderManagerImpl$LoaderInfo(android.support.v4.app.LoaderManagerImpl,int,android.os.Bundle,android.support.v4.app.LoaderManager$LoaderCallbacks)
+android.support.v4.app.NavUtils
+android.support.v4.app.NotificationCompat:
+    public static final int FLAG_HIGH_PRIORITY
+    public NotificationCompat()
+android.support.v4.app.NotificationCompat$Builder:
+    public android.support.v4.app.NotificationCompat$Builder setSmallIcon(int,int)
+    public android.support.v4.app.NotificationCompat$Builder setNumber(int)
+    public android.support.v4.app.NotificationCompat$Builder setContentInfo(java.lang.CharSequence)
+    public android.support.v4.app.NotificationCompat$Builder setDeleteIntent(android.app.PendingIntent)
+    public android.support.v4.app.NotificationCompat$Builder setFullScreenIntent(android.app.PendingIntent,boolean)
+    public android.support.v4.app.NotificationCompat$Builder setTicker(java.lang.CharSequence)
+    public android.support.v4.app.NotificationCompat$Builder setTicker(java.lang.CharSequence,android.widget.RemoteViews)
+    public android.support.v4.app.NotificationCompat$Builder setLargeIcon(android.graphics.Bitmap)
+    public android.support.v4.app.NotificationCompat$Builder setSound(android.net.Uri)
+    public android.support.v4.app.NotificationCompat$Builder setSound(android.net.Uri,int)
+    public android.support.v4.app.NotificationCompat$Builder setVibrate(long[])
+    public android.support.v4.app.NotificationCompat$Builder setOnlyAlertOnce(boolean)
+    public android.support.v4.app.NotificationCompat$Builder setAutoCancel(boolean)
+    public android.support.v4.app.NotificationCompat$Builder setDefaults(int)
+android.support.v4.app.NotificationCompatHoneycomb:
+    NotificationCompatHoneycomb()
+android.support.v4.app.ServiceCompat
+android.support.v4.app.ShareCompat
+android.support.v4.app.ShareCompat$IntentBuilder
+android.support.v4.app.ShareCompat$IntentReader
+android.support.v4.app.ShareCompat$ShareCompatImpl
+android.support.v4.app.ShareCompat$ShareCompatImplBase
+android.support.v4.app.ShareCompat$ShareCompatImplICS
+android.support.v4.app.ShareCompatICS
+android.support.v4.app.TaskStackBuilder
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImpl
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplBase
+android.support.v4.app.TaskStackBuilder$TaskStackBuilderImplHoneycomb
+android.support.v4.app.TaskStackBuilderHoneycomb
+android.support.v4.content.AsyncTaskLoader:
+    static final java.lang.String TAG
+    static final boolean DEBUG
+    public void setUpdateThrottle(long)
+    public void waitForLoader()
+android.support.v4.content.AsyncTaskLoader$LoadTask:
+    static synthetic java.util.concurrent.CountDownLatch access$000(android.support.v4.content.AsyncTaskLoader$LoadTask)
+android.support.v4.content.CursorLoader:
+    public CursorLoader(android.content.Context,android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)
+    public android.net.Uri getUri()
+    public void setUri(android.net.Uri)
+    public java.lang.String[] getProjection()
+    public void setProjection(java.lang.String[])
+    public java.lang.String getSelection()
+    public void setSelection(java.lang.String)
+    public java.lang.String[] getSelectionArgs()
+    public void setSelectionArgs(java.lang.String[])
+    public java.lang.String getSortOrder()
+    public void setSortOrder(java.lang.String)
+android.support.v4.content.IntentCompat
+android.support.v4.content.Loader:
+    public int getId()
+    public void abandon()
+    protected void onAbandon()
+android.support.v4.content.LocalBroadcastManager
+android.support.v4.content.LocalBroadcastManager$1
+android.support.v4.content.LocalBroadcastManager$BroadcastRecord
+android.support.v4.content.LocalBroadcastManager$ReceiverRecord
+android.support.v4.content.ModernAsyncTask:
+    private static final java.lang.String LOG_TAG
+    private static final int CORE_POOL_SIZE
+    private static final int MAXIMUM_POOL_SIZE
+    private static final int KEEP_ALIVE
+    private static final int MESSAGE_POST_RESULT
+    private static final int MESSAGE_POST_PROGRESS
+    public static void init()
+    public static void setDefaultExecutor(java.util.concurrent.Executor)
+    public final android.support.v4.content.ModernAsyncTask$Status getStatus()
+    public final java.lang.Object get()
+    public final java.lang.Object get(long,java.util.concurrent.TimeUnit)
+    public final varargs android.support.v4.content.ModernAsyncTask execute(java.lang.Object[])
+    public static void execute(java.lang.Runnable)
+    protected final varargs void publishProgress(java.lang.Object[])
+android.support.v4.content.ModernAsyncTask$Status:
+    public static android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.content.pm.ActivityInfoCompat
+android.support.v4.database.DatabaseUtilsCompat
+android.support.v4.os.ParcelableCompat:
+    public ParcelableCompat()
+android.support.v4.os.ParcelableCompatCreatorHoneycombMR2Stub:
+    ParcelableCompatCreatorHoneycombMR2Stub()
+android.support.v4.util.DebugUtils:
+    public DebugUtils()
+android.support.v4.util.LruCache
+android.support.v4.util.TimeUtils:
+    public static final int HUNDRED_DAY_FIELD_LEN
+    private static final int SECONDS_PER_MINUTE
+    private static final int SECONDS_PER_HOUR
+    private static final int SECONDS_PER_DAY
+    public TimeUtils()
+    public static void formatDuration(long,java.lang.StringBuilder)
+android.support.v4.view.AccessibilityDelegateCompat
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateIcsImpl$1
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateImpl
+android.support.v4.view.AccessibilityDelegateCompat$AccessibilityDelegateStubImpl
+android.support.v4.view.AccessibilityDelegateCompatIcs
+android.support.v4.view.AccessibilityDelegateCompatIcs$1
+android.support.v4.view.AccessibilityDelegateCompatIcs$AccessibilityDelegateBridge
+android.support.v4.view.KeyEventCompat:
+    public KeyEventCompat()
+    public static int normalizeMetaState(int)
+    public static boolean metaStateHasModifiers(int,int)
+    public static boolean metaStateHasNoModifiers(int)
+android.support.v4.view.KeyEventCompat$BaseKeyEventVersionImpl:
+    private static final int META_MODIFIER_MASK
+    private static final int META_ALL_MASK
+android.support.v4.view.KeyEventCompat$HoneycombKeyEventVersionImpl:
+    public int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompat$KeyEventVersionImpl:
+    public abstract int normalizeMetaState(int)
+android.support.v4.view.KeyEventCompatHoneycomb:
+    KeyEventCompatHoneycomb()
+    public static int normalizeMetaState(int)
+android.support.v4.view.MenuCompat
+android.support.v4.view.MenuCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompat
+android.support.v4.view.MenuItemCompat$BaseMenuVersionImpl
+android.support.v4.view.MenuItemCompat$HoneycombMenuVersionImpl
+android.support.v4.view.MenuItemCompat$MenuVersionImpl
+android.support.v4.view.MenuItemCompatHoneycomb
+android.support.v4.view.MotionEventCompat:
+    public static final int ACTION_MASK
+    public static final int ACTION_POINTER_DOWN
+    public static final int ACTION_POINTER_UP
+    public static final int ACTION_HOVER_MOVE
+    public static final int ACTION_SCROLL
+    public static final int ACTION_POINTER_INDEX_MASK
+    public static final int ACTION_POINTER_INDEX_SHIFT
+    public MotionEventCompat()
+    public static int getActionMasked(android.view.MotionEvent)
+android.support.v4.view.MotionEventCompatEclair:
+    MotionEventCompatEclair()
+android.support.v4.view.PagerAdapter:
+    public static final int POSITION_UNCHANGED
+    public static final int POSITION_NONE
+    public void notifyDataSetChanged()
+android.support.v4.view.PagerTitleStrip:
+    private static final java.lang.String TAG
+    private static final int SIDE_ALPHA
+    private static final int TEXT_SPACING
+android.support.v4.view.VelocityTrackerCompat:
+    public VelocityTrackerCompat()
+android.support.v4.view.VelocityTrackerCompatHoneycomb:
+    VelocityTrackerCompatHoneycomb()
+android.support.v4.view.ViewCompat:
+    public static final int OVER_SCROLL_ALWAYS
+    public static final int OVER_SCROLL_IF_CONTENT_SCROLLS
+    public static final int OVER_SCROLL_NEVER
+    public ViewCompat()
+    public static boolean canScrollVertically(android.view.View,int)
+    public static void setOverScrollMode(android.view.View,int)
+    public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public static void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public static void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$BaseViewCompatImpl:
+    public boolean canScrollVertically(android.view.View,int)
+    public void setOverScrollMode(android.view.View,int)
+    public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+    public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+android.support.v4.view.ViewCompat$GBViewCompatImpl:
+    public void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompat$ICSViewCompatImpl:
+    public boolean canScrollVertically(android.view.View,int)
+    public void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompat$ViewCompatImpl:
+    public abstract boolean canScrollVertically(android.view.View,int)
+    public abstract void setOverScrollMode(android.view.View,int)
+    public abstract void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public abstract void onInitializeAccessibilityNodeInfo(android.view.View,android.support.v4.view.accessibility.AccessibilityNodeInfoCompat)
+    public abstract void setAccessibilityDelegate(android.view.View,android.support.v4.view.AccessibilityDelegateCompat)
+android.support.v4.view.ViewCompatGingerbread:
+    ViewCompatGingerbread()
+    public static void setOverScrollMode(android.view.View,int)
+android.support.v4.view.ViewCompatICS:
+    ViewCompatICS()
+    public static boolean canScrollVertically(android.view.View,int)
+    public static void setAccessibilityDelegate(android.view.View,java.lang.Object)
+    public static void onPopulateAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public static void onInitializeAccessibilityEvent(android.view.View,android.view.accessibility.AccessibilityEvent)
+    public static void onInitializeAccessibilityNodeInfo(android.view.View,java.lang.Object)
+android.support.v4.view.ViewConfigurationCompat:
+    public ViewConfigurationCompat()
+android.support.v4.view.ViewConfigurationCompatFroyo:
+    ViewConfigurationCompatFroyo()
+android.support.v4.view.ViewGroupCompat
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatIcsImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatImpl
+android.support.v4.view.ViewGroupCompat$ViewGroupCompatStubImpl
+android.support.v4.view.ViewGroupCompatIcs
+android.support.v4.view.ViewPager:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private static final boolean USE_CACHE
+    private static final int DEFAULT_OFFSCREEN_PAGES
+    private static final int MAX_SETTLE_DURATION
+    private static final int MIN_DISTANCE_FOR_FLING
+    private static final int INVALID_POINTER
+    public static final int SCROLL_STATE_IDLE
+    public static final int SCROLL_STATE_DRAGGING
+    public static final int SCROLL_STATE_SETTLING
+    public int getOffscreenPageLimit()
+    public void setOffscreenPageLimit(int)
+    public void setPageMargin(int)
+    public int getPageMargin()
+    public void setPageMarginDrawable(android.graphics.drawable.Drawable)
+    public void setPageMarginDrawable(int)
+    void smoothScrollTo(int,int)
+android.support.v4.view.ViewPager$SimpleOnPageChangeListener
+android.support.v4.view.accessibility.AccessibilityEventCompat
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventIcsImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventStubImpl
+android.support.v4.view.accessibility.AccessibilityEventCompat$AccessibilityEventVersionImpl
+android.support.v4.view.accessibility.AccessibilityEventCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerIcsImpl$1
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerStubImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityManagerVersionImpl
+android.support.v4.view.accessibility.AccessibilityManagerCompat$AccessibilityStateChangeListenerCompat
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$1
+android.support.v4.view.accessibility.AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoIcsImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompat$AccessibilityNodeInfoStubImpl
+android.support.v4.view.accessibility.AccessibilityNodeInfoCompatIcs
+android.support.v4.view.accessibility.AccessibilityRecordCompat
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordIcsImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompat$AccessibilityRecordStubImpl
+android.support.v4.view.accessibility.AccessibilityRecordCompatIcs
+android.support.v4.widget.CursorAdapter:
+    public static final int FLAG_AUTO_REQUERY
+    public static final int FLAG_REGISTER_CONTENT_OBSERVER
+    public CursorAdapter(android.content.Context,android.database.Cursor,boolean)
+    public CursorAdapter(android.content.Context,android.database.Cursor,int)
+    protected void init(android.content.Context,android.database.Cursor,boolean)
+    public android.widget.FilterQueryProvider getFilterQueryProvider()
+    public void setFilterQueryProvider(android.widget.FilterQueryProvider)
+android.support.v4.widget.EdgeEffectCompat:
+    public boolean onAbsorb(int)
+android.support.v4.widget.EdgeEffectCompat$BaseEdgeEffectImpl:
+    public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectIcsImpl:
+    public boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompat$EdgeEffectImpl:
+    public abstract boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.EdgeEffectCompatIcs:
+    EdgeEffectCompatIcs()
+    public static boolean onAbsorb(java.lang.Object,int)
+android.support.v4.widget.ResourceCursorAdapter:
+    public ResourceCursorAdapter(android.content.Context,int,android.database.Cursor,boolean)
+    public ResourceCursorAdapter(android.content.Context,int,android.database.Cursor,int)
+    public void setViewResource(int)
+    public void setDropDownViewResource(int)
+android.support.v4.widget.SearchViewCompat
+android.support.v4.widget.SearchViewCompat$OnQueryTextListenerCompat
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatHoneycombImpl$1
+android.support.v4.widget.SearchViewCompat$SearchViewCompatImpl
+android.support.v4.widget.SearchViewCompat$SearchViewCompatStubImpl
+android.support.v4.widget.SearchViewCompatHoneycomb
+android.support.v4.widget.SearchViewCompatHoneycomb$1
+android.support.v4.widget.SearchViewCompatHoneycomb$OnQueryTextListenerCompatBridge
+android.support.v4.widget.SimpleCursorAdapter:
+    public SimpleCursorAdapter(android.content.Context,int,android.database.Cursor,java.lang.String[],int[],int)
+    public android.support.v4.widget.SimpleCursorAdapter$ViewBinder getViewBinder()
+    public void setViewBinder(android.support.v4.widget.SimpleCursorAdapter$ViewBinder)
+    public int getStringConversionColumn()
+    public void setStringConversionColumn(int)
+    public android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter getCursorToStringConverter()
+    public void setCursorToStringConverter(android.support.v4.widget.SimpleCursorAdapter$CursorToStringConverter)
+    public void changeCursorAndColumns(android.database.Cursor,java.lang.String[],int[])
+com.athlete.AthleteApplication:
+    72:73:public void createNewMediaPlayerVoiceObject()
+    80:81:public void createNewMediaPlayerMusicObject()
+com.athlete.BuildConfig
+com.athlete.Constants:
+    public static final boolean DEBUG
+    public static final java.lang.String APP_ID_FB
+    public static final java.lang.String FB_TAG
+    public static final java.lang.String FB_PERMISSION_READ_STREAM
+    public static final java.lang.String FB_PERMISSION_PUBLISH_ACTIONS
+    public static final java.lang.String FB_PERMISSION_USER_BIRTHDAY
+    public static final java.lang.String FB_PERMISSION_USER_PHOTOS
+    public static final java.lang.String FB_PERMISSION_EMAIL
+    public static final java.lang.String FB_PERMISSION_LIKE
+    public static final java.lang.String FB_PERMISSION_FR_LIKE
+    public static final java.lang.String FB_PERMISSION_FR_GROUPS
+    public static final java.lang.String FB_PERMISSION_FR_PHOTO
+    public static final java.lang.String FB_PERMISSION_PUBLISH_ACTION
+    public static final java.lang.String FB_PERMISSION_PUBLISH
+    public static final java.lang.String FB_REQUEST_ME
+    public static final java.lang.String PREFERENCES
+    public static final int RESULT_CODE
+    public static final int RESULT_CODE_TAB
+    public static final int RESULT_CODE_TRACK
+    public static final int RESULT_CODE_DELETE
+    public static final int REQUEST_CODE
+    public static final int REQUEST_CODE_MALE
+    public static final int REQUEST_CODE_FEMALE
+    public static final int REQUEST_CODE_WEIGHT
+    public static final int REQUEST_CODE_BD
+    public static final int REQUEST_CODE_METRIC
+    public static final int REQUEST_CODE_TRANSFER
+    public static final int REQUEST_CODE_COUNTDOUNT
+    public static final int REQUEST_CODE_DELETE
+    public static final int REQUEST_CODE_DURATION
+    public static final int REQUEST_CODE_AUDIO_TIMING
+    public static final int ANIM_DURATION
+    public static final int ONE_SECOND
+    public static final double ONE_THSND
+    public static final int ONE_MILLION
+    public static final java.lang.String DOT
+    public static final java.lang.String REGULAR_EXPRESSION_LOG
+    public static final java.lang.String URL_TERMS
+    public static final java.lang.String URL_FORGOT_PASS
+    public static final java.lang.String URL_FEEDBACK
+    public static final java.lang.String UPDATE_PULL_DOWN
+    public static final java.lang.String TAG
+    public static final java.lang.String SDCARD_TOP_DIR
+    public static final int DISTANCE_SMOOTHING_FACTOR
+    public static final int ELEVATION_SMOOTHING_FACTOR
+    public static final int GRADE_SMOOTHING_FACTOR
+    public static final int SPEED_SMOOTHING_FACTOR
+    public static final int MAX_DISPLAYED_TRACK_POINTS
+    public static final int TARGET_DISPLAYED_TRACK_POINTS
+    public static final double MARKER_Y_OFFSET_PERCENTAGE
+    public static final int MAX_LOADED_TRACK_POINTS
+    public static final int MAX_LOADED_TRACK_POINTS_PER_BATCH
+    public static final int MAX_DISPLAYED_WAYPOINTS_POINTS
+    public static final int MAX_LOADED_WAYPOINTS_POINTS
+    public static final double MAX_NO_MOVEMENT_DISTANCE
+    public static final double MAX_NO_MOVEMENT_SPEED
+    public static final double MAX_ACCELERATION
+    public static final long MAX_LOCATION_AGE_MS
+    public static final long MAX_NETWORK_AGE_MS
+    public static final java.lang.String ACCOUNT_TYPE
+    public static final java.lang.String RESUME_TRACK_EXTRA_NAME
+    public static final java.lang.String MAPSHOP_BASE_URL
+    public static final int DEFAULT_ANNOUNCEMENT_FREQUENCY
+    public static final int DEFAULT_AUTO_RESUME_TRACK_TIMEOUT
+    public static final int DEFAULT_MAX_RECORDING_DISTANCE
+    public static final int DEFAULT_MIN_RECORDING_DISTANCE
+    public static final int DEFAULT_MIN_RECORDING_INTERVAL
+    public static final int DEFAULT_SPLIT_FREQUENCY
+    public static final java.lang.String SETTINGS_NAME
+    11:12:protected Constants()
+com.athlete.Constants$AUDIO_TIMING_FLOAT
+com.athlete.Constants$ERRORS
+com.athlete.Constants$FORMATS
+com.athlete.Constants$HOST
+com.athlete.Constants$INTENT_KEY
+com.athlete.Constants$INTENT_KEY_FB
+com.athlete.Constants$MEDIA_PLAYER_KEY
+com.athlete.Constants$OBJECT_TYPE
+com.athlete.Constants$SIGNATURE
+com.athlete.Constants$SharedPreferencesKeys
+com.athlete.Constants$TABLE_NAME
+com.athlete.Constants$TYPE_FEED
+com.athlete.Constants$WEIGHT_UNIT
+com.athlete.Manifest
+com.athlete.Manifest$permission
+com.athlete.R:
+    10:10:public R()
+com.athlete.R$anim
+com.athlete.R$array
+com.athlete.R$attr
+com.athlete.R$bool
+com.athlete.R$color
+com.athlete.R$dimen
+com.athlete.R$drawable
+com.athlete.R$id
+com.athlete.R$integer
+com.athlete.R$layout
+com.athlete.R$plurals
+com.athlete.R$raw
+com.athlete.R$string
+com.athlete.R$style
+com.athlete.R$styleable:
+    public static final int CirclePageIndicator_android_background
+    public static final int CirclePageIndicator_android_orientation
+    public static final int CirclePageIndicator_centered
+    public static final int CirclePageIndicator_fillColor
+    public static final int CirclePageIndicator_pageColor
+    public static final int CirclePageIndicator_radius
+    public static final int CirclePageIndicator_snap
+    public static final int CirclePageIndicator_strokeColor
+    public static final int CirclePageIndicator_strokeWidth
+    public static final int LinePageIndicator_android_background
+    public static final int LinePageIndicator_centered
+    public static final int LinePageIndicator_gapWidth
+    public static final int LinePageIndicator_lineWidth
+    public static final int LinePageIndicator_selectedColor
+    public static final int LinePageIndicator_strokeWidth
+    public static final int LinePageIndicator_unselectedColor
+    public static final int RoundedImageView_corner_radius
+    public static final int TitlePageIndicator_android_background
+    public static final int TitlePageIndicator_android_textColor
+    public static final int TitlePageIndicator_android_textSize
+    public static final int TitlePageIndicator_clipPadding
+    public static final int TitlePageIndicator_footerColor
+    public static final int TitlePageIndicator_footerIndicatorHeight
+    public static final int TitlePageIndicator_footerIndicatorStyle
+    public static final int TitlePageIndicator_footerIndicatorUnderlinePadding
+    public static final int TitlePageIndicator_footerLineHeight
+    public static final int TitlePageIndicator_footerPadding
+    public static final int TitlePageIndicator_linePosition
+    public static final int TitlePageIndicator_selectedBold
+    public static final int TitlePageIndicator_selectedColor
+    public static final int TitlePageIndicator_titlePadding
+    public static final int TitlePageIndicator_topPadding
+    public static final int UnderlinePageIndicator_android_background
+    public static final int UnderlinePageIndicator_fadeDelay
+    public static final int UnderlinePageIndicator_fadeLength
+    public static final int UnderlinePageIndicator_fades
+    public static final int UnderlinePageIndicator_selectedColor
+    public static final int ViewPagerIndicator_vpiCirclePageIndicatorStyle
+    public static final int ViewPagerIndicator_vpiIconPageIndicatorStyle
+    public static final int ViewPagerIndicator_vpiLinePageIndicatorStyle
+    public static final int ViewPagerIndicator_vpiTabPageIndicatorStyle
+    public static final int ViewPagerIndicator_vpiTitlePageIndicatorStyle
+    public static final int ViewPagerIndicator_vpiUnderlinePageIndicatorStyle
+    2950:2950:public R$styleable()
+com.athlete.activity.ActivityWelcome:
+    private static final int SPLASH_TIME
+com.athlete.activity.BaseActivity$TransitionType:
+    1:1:public static com.athlete.activity.BaseActivity$TransitionType[] values()
+    1:1:public static com.athlete.activity.BaseActivity$TransitionType valueOf(java.lang.String)
+com.athlete.activity.TabActivityMain:
+    168:168:public java.lang.String getmTrackPath()
+com.athlete.activity.auth.ActivityBaseAuth$BaseAlbumDirFactory:
+    private static final java.lang.String CAMERA_DIR
+com.athlete.activity.auth.ActivityBaseAuth$SampleRequestListener:
+    226:228:public void onFacebookError(com.facebook.android.FacebookError,java.lang.Object)
+com.athlete.activity.auth.ActivityBaseAuth$SessionListener:
+    272:273:public void onLogoutFinish()
+    278:278:public void onLogoutBegin()
+com.athlete.activity.track.ActivityMapTrack:
+    private static final java.lang.String KEY_CURRENT_LOCATION
+    private static final java.lang.String KEY_KEEP_MY_LOCATION_VISIBLE
+com.athlete.activity.track.BaseAlbumDirFactory:
+    private static final java.lang.String CAMERA_DIR
+com.athlete.activity.track.BaseTabTrack:
+    public static final java.lang.String EXTRA_TRACK_ID
+    protected static final int CAMERA_REQUEST
+    protected static final int CAMERA_GALLERY
+    private static final java.lang.String JPEG_FILE_PREFIX
+    private static final java.lang.String JPEG_FILE_SUFFIX
+    private byte[] bytePhoto
+    235:235:public byte[] getBytePhoto()
+    239:240:public void setBytePhoto(byte[])
+    243:243:public java.io.File getFile()
+com.athlete.activity.track.TabActivityTrack:
+    324:324:public boolean getStartNewRecording()
+    508:508:public boolean getTrackPaused()
+com.athlete.activity.track.details.ActivityRouteDetails$Coordinate:
+    775:776:ActivityRouteDetails$Coordinate(com.athlete.activity.track.details.ActivityRouteDetails)
+    786:787:public void setX(double)
+    794:795:public void setY(double)
+com.athlete.activity.track.details.AddPhotoAndInitActivity:
+    protected static final int CAMERA_REQUEST
+    protected static final int CAMERA_GALLERY
+    protected static final java.lang.String JPEG_FILE_PREFIX
+    protected static final java.lang.String JPEG_FILE_SUFFIX
+    private boolean keepMyLocationVisible
+    protected com.athlete.google.android.apps.mytracks.services.TrackRecordingServiceConnection trackRecordingServiceConnection
+    protected android.location.Location currentLocation
+    protected boolean zoomToMyLocation
+    464:464:public boolean isKeepMyLocationVisible()
+    468:469:public void setKeepMyLocationVisible(boolean)
+com.athlete.activity.track.details.BaseAlbumDirFactory:
+    private static final java.lang.String CAMERA_DIR
+com.athlete.activity.track.music.ActivityMusic:
+    private int savePosition
+com.athlete.activity.user.ActivityFriendInvite$FQLRequestListener:
+    638:638:public void onFacebookError(com.facebook.android.FacebookError)
+com.athlete.activity.user.ActivityFriendInvite$SampleRequestListener:
+    674:674:public void onFacebookError(com.facebook.android.FacebookError,java.lang.Object)
+com.athlete.adapter.BaseListAdapter:
+    76:77:public void addItems(java.util.List)
+    80:81:public void addItem(java.lang.Object)
+    99:99:public java.util.List getList()
+    113:114:public void removeItem(int)
+    128:131:public void setStartFrom(int)
+com.athlete.adapter.MainPageAdapter:
+    63:63:public java.lang.String getTitle(int)
+com.athlete.apps.mytracks.ExtremityMonitor
+com.athlete.apps.mytracks.TripStatistics
+com.athlete.apps.mytracks.TripStatistics$Creator
+com.athlete.apps.mytracks.content.DescriptionGenerator
+com.athlete.apps.mytracks.content.MyTracksLocation
+com.athlete.apps.mytracks.content.MyTracksProviderUtils
+com.athlete.apps.mytracks.content.MyTracksProviderUtils$1
+com.athlete.apps.mytracks.content.MyTracksProviderUtils$DoubleBufferedLocationFactory
+com.athlete.apps.mytracks.content.MyTracksProviderUtils$Factory
+com.athlete.apps.mytracks.content.MyTracksProviderUtils$LocationFactory
+com.athlete.apps.mytracks.content.MyTracksProviderUtils$LocationIterator
+com.athlete.apps.mytracks.content.MyTracksProviderUtilsImpl
+com.athlete.apps.mytracks.content.MyTracksProviderUtilsImpl$1
+com.athlete.apps.mytracks.content.MyTracksProviderUtilsImpl$CachedTrackColumnIndices
+com.athlete.apps.mytracks.content.Sensor
+com.athlete.apps.mytracks.content.Sensor$SensorData
+com.athlete.apps.mytracks.content.Sensor$SensorData$Builder
+com.athlete.apps.mytracks.content.Sensor$SensorDataSet
+com.athlete.apps.mytracks.content.Sensor$SensorDataSet$Builder
+com.athlete.apps.mytracks.content.Sensor$SensorState
+com.athlete.apps.mytracks.content.Sensor$SensorState$1
+com.athlete.apps.mytracks.content.Track
+com.athlete.apps.mytracks.content.Track$Creator
+com.athlete.apps.mytracks.content.TrackPointsColumns
+com.athlete.apps.mytracks.content.TracksColumns
+com.athlete.bl.BaseBl:
+    protected static com.athlete.db.DatabaseHelper helper
+    protected static android.content.Context mContext
+    31:35:public static com.athlete.db.DatabaseHelper getHelper()
+    39:47:public static java.util.List getAll(java.lang.Class)
+com.athlete.bl.BaseBl$JSON_KEY
+com.athlete.bl.BaseOperationsBL:
+    private static final java.lang.String USER
+    30:37:public java.lang.Object getBy(java.lang.Class,java.util.UUID)
+    41:49:public java.lang.Object getByUserID(java.lang.Class,com.athlete.model.User)
+    106:113:public java.util.List getListFromDB(java.lang.Class)
+    129:135:public boolean update(java.lang.Class,java.lang.Object)
+    140:158:public void createList(java.util.List,java.lang.Class)
+    162:178:public void updateList(java.util.List,java.lang.Class)
+    231:242:public void delete(java.util.UUID,java.lang.Class)
+    255:260:public void deleteCollection(com.j256.ormlite.dao.ForeignCollection,java.lang.Class)
+    264:269:public void refresh(java.lang.Class,java.lang.Object)
+com.athlete.bl.BaseOperationsBL$1
+com.athlete.bl.BaseOperationsBL$2
+com.athlete.bl.FeedBL:
+    47:55:public com.athlete.model.Feed getByWorkout(com.athlete.model.WorkOut)
+com.athlete.bl.FriendsBL:
+    31:36:public boolean createOrUpdate(com.athlete.model.FriendsM2M)
+com.athlete.bl.IdleWorkoutBL:
+    27:32:public boolean createOrUpdate(com.athlete.model.IdleWorkOut)
+    36:43:public com.athlete.model.IdleWorkOut getBy(java.lang.String)
+com.athlete.bl.StatsBL:
+    25:29:public boolean createOrUpdate(com.athlete.model.Stats)
+com.athlete.bl.User2FeedBl:
+    29:33:public boolean createOrUpdate(com.athlete.model.UserM2MFeed)
+com.athlete.control.PinchImageView:
+    static final int NONE
+    static final int DRAG
+    static final int ZOOM
+    static final int CLICK
+    110:111:public void setMaxZoom(float)
+com.athlete.control.PlaySound:
+    private static final int fractionHungred
+    private static final int halfSecond
+    23:23:public PlaySound()
+    67:69:public static void playSound(android.app.Activity,android.media.MediaPlayer,int,boolean,java.lang.Boolean)
+com.athlete.control.SessionEvents:
+    21:21:public SessionEvents()
+    47:48:public static void removeAuthListener(com.athlete.control.SessionEvents$AuthListener)
+    71:72:public static void removeLogoutListener(com.athlete.control.SessionEvents$LogoutListener)
+    87:90:public static void onLogoutBegin()
+    93:96:public static void onLogoutFinish()
+com.athlete.control.SessionEvents$LogoutListener:
+    public abstract void onLogoutBegin()
+    public abstract void onLogoutFinish()
+com.athlete.control.SessionStore:
+    private static final java.lang.String TOKEN
+    private static final java.lang.String EXPIRES
+    private static final java.lang.String KEY
+    25:25:public SessionStore()
+    49:52:public static void clear(android.content.Context)
+com.athlete.control.VolumeSeekBar:
+    101:108:public synchronized void setProgressAndThumb(int)
+    111:112:public synchronized void setMaximum(int)
+    115:115:public synchronized int getMaximum()
+com.athlete.control.sectionlistview.Composer
+com.athlete.control.sectionlistview.ComposerWorkOut
+com.athlete.control.viewpagerindicator.CirclePageIndicator:
+    public static final int HORIZONTAL
+    public static final int VERTICAL
+    private static final int INVALID_POINTER
+    133:135:public void setCentered(boolean)
+    138:138:public boolean isCentered()
+    147:147:public int getPageColor()
+    156:156:public int getFillColor()
+    160:172:public void setOrientation(int)
+    175:175:public int getOrientation()
+    179:181:public void setStrokeColor(int)
+    184:184:public int getStrokeColor()
+    193:193:public float getStrokeWidth()
+    202:202:public float getRadius()
+    206:208:public void setSnap(boolean)
+    211:211:public boolean isSnap()
+    415:417:public void setViewPager(android.support.v4.view.ViewPager,int)
+    431:432:public void notifyDataSetChanged()
+    472:473:public void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+com.athlete.control.viewpagerindicator.PageIndicator:
+    public abstract void setViewPager(android.support.v4.view.ViewPager)
+    public abstract void setViewPager(android.support.v4.view.ViewPager,int)
+    public abstract void setCurrentItem(int)
+    public abstract void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+    public abstract void notifyDataSetChanged()
+com.athlete.control.viewpagerindicator.TitlePageIndicator:
+    private static final float SELECTION_FADE_PERCENTAGE
+    private static final float BOLD_FADE_PERCENTAGE
+    private static final java.lang.String EMPTY_TITLE
+    private static final int INVALID_POINTER
+    264:264:public int getFooterColor()
+    268:271:public void setFooterColor(int)
+    274:274:public float getFooterLineHeight()
+    278:281:public void setFooterLineHeight(float)
+    284:284:public float getFooterIndicatorHeight()
+    288:290:public void setFooterIndicatorHeight(float)
+    293:293:public float getFooterIndicatorPadding()
+    297:299:public void setFooterIndicatorPadding(float)
+    302:302:public com.athlete.control.viewpagerindicator.TitlePageIndicator$IndicatorStyle getFooterIndicatorStyle()
+    306:308:public void setFooterIndicatorStyle(com.athlete.control.viewpagerindicator.TitlePageIndicator$IndicatorStyle)
+    311:311:public com.athlete.control.viewpagerindicator.TitlePageIndicator$LinePosition getLinePosition()
+    315:317:public void setLinePosition(com.athlete.control.viewpagerindicator.TitlePageIndicator$LinePosition)
+    320:320:public int getSelectedColor()
+    324:326:public void setSelectedColor(int)
+    329:329:public boolean isSelectedBold()
+    333:335:public void setSelectedBold(boolean)
+    338:338:public int getTextColor()
+    342:345:public void setTextColor(int)
+    348:348:public float getTextSize()
+    352:354:public void setTextSize(float)
+    357:357:public float getTitlePadding()
+    361:363:public void setTitlePadding(float)
+    366:366:public float getTopPadding()
+    370:372:public void setTopPadding(float)
+    375:375:public float getClipPadding()
+    379:381:public void setClipPadding(float)
+    384:386:public void setTypeface(android.graphics.Typeface)
+    389:389:public android.graphics.Typeface getTypeface()
+    794:796:public void setViewPager(android.support.v4.view.ViewPager,int)
+    800:801:public void notifyDataSetChanged()
+    810:811:public void setOnCenterItemClickListener(com.athlete.control.viewpagerindicator.TitlePageIndicator$OnCenterItemClickListener)
+    859:860:public void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+com.athlete.control.viewpagerindicator.TitlePageIndicator$IndicatorStyle:
+    1:1:public static com.athlete.control.viewpagerindicator.TitlePageIndicator$IndicatorStyle valueOf(java.lang.String)
+com.athlete.control.viewpagerindicator.TitlePageIndicator$LinePosition:
+    1:1:public static com.athlete.control.viewpagerindicator.TitlePageIndicator$LinePosition valueOf(java.lang.String)
+com.athlete.control.viewpagerindicator.TitleProvider
+com.athlete.db.DatabaseHelper:
+    private static final java.lang.String DB_NAME
+    private static final int DB_VERSION
+com.athlete.exception.AuthException:
+    private static final long serialVersionUID
+    14:17:public AuthException(java.lang.Throwable,java.lang.String,java.lang.String)
+    20:23:public AuthException(java.lang.String,java.lang.String)
+    27:30:public AuthException(java.lang.String,java.lang.Throwable,java.lang.String,java.lang.String)
+com.athlete.exception.BaseException:
+    private static final long serialVersionUID
+    private int error_code
+    private java.lang.String error_msg
+    11:14:public BaseException(java.lang.String,int)
+    17:20:public BaseException(java.lang.Throwable,java.lang.String,int)
+    23:23:public int getError_code()
+    27:27:public java.lang.String getError_msg()
+com.athlete.parser.BaseParser:
+    19:22:public BaseParser(org.json.JSONObject,com.athlete.db.DatabaseHelper)
+com.athlete.parser.CommentParser:
+    private static final java.lang.String OBJECTS
+com.athlete.parser.ConversationParser:
+    private static final java.lang.String OBJECTS
+com.athlete.parser.ErrorParser:
+    public static final java.lang.String ERROR
+    public static final java.lang.String MESSAGE
+    public static final java.lang.String CREATED
+com.athlete.parser.FaceBookUserParser:
+    private static final java.lang.String UID
+    protected static final java.lang.String NAME
+    protected static final java.lang.String PIC
+com.athlete.parser.FeedParser:
+    private static final java.lang.String OBJECTS
+    private static final java.lang.String META
+    private static final java.lang.String FeedType
+    private static final java.lang.String FRIENDS
+    private static final java.lang.String FEATURED
+    private static final java.lang.String LOCAL
+    private static final java.lang.String PROFILE
+com.athlete.parser.FriendParser:
+    private static final java.lang.String OBJECTS
+    private static final java.lang.String META
+com.athlete.parser.MessageParser:
+    private static final java.lang.String OBJECTS
+com.athlete.parser.PictureParser:
+    private static final java.lang.String OBJECTS
+com.athlete.parser.PreferenceParser
+com.athlete.parser.UserParser:
+    private static final java.lang.String OBJECTS
+    protected static final java.lang.String PREFERENCES
+    protected static final java.lang.String PROFILE
+com.athlete.parser.WorkOutParser:
+    private static final java.lang.String OBJECTS
+com.athlete.services.BaseTask:
+    85:85:protected com.athlete.services.IProgressTracker getProgressTracker()
+com.athlete.services.HttpResult
+com.athlete.services.task.CreateNewConversationTask:
+    private static final java.lang.String RECIPIENTS
+    private static final java.lang.String MESSAGE
+com.athlete.services.task.PostRouteFavoriteTask:
+    private static final java.lang.String IS_FAVORITE
+com.athlete.services.task.SendCommentTask:
+    private static final java.lang.String POST_ID
+    private static final java.lang.String COMMENT
+com.athlete.services.task.SendInviteByEmailTask:
+    private static final java.lang.String EMAIL
+    private static final java.lang.String NAME
+com.athlete.services.task.SendLikeTask:
+    private static final java.lang.String OBJECT_ID
+    private static final java.lang.String OBJECT_TYPE
+    private static final java.lang.String LIKE_COUNT
+com.athlete.services.task.SendMessageTask:
+    private static final java.lang.String CONVERSATION_ID
+    private static final java.lang.String MESSAGE
+com.athlete.services.task.get.GetPreferenceTask
+com.athlete.util.AnalyticsUtils:
+    private static final java.lang.String UA
+    private static final java.lang.String PRODUCT_NAME
+    15:16:private AnalyticsUtils()
+com.athlete.util.AnalyticsUtils$GOOGLE_ANALYTICS
+com.athlete.util.AnalyticsUtils$GOOGLE_ANALYTICS$SCREEN
+com.athlete.util.AudioFocusHelper:
+    private static final java.lang.String TAG
+    45:45:public int getFocus()
+com.athlete.util.BaseRequestListener:
+    16:18:public void onFacebookError(com.facebook.android.FacebookError,java.lang.Object)
+com.athlete.util.CommonHelper:
+    private static final int MINUTE
+    private static final long oneSecLong
+    private static final int hours24
+    private static final int hours23
+    private static final int WEEK
+    private static final int fourDay
+    private static final java.lang.String algoritm
+    private static final java.lang.String FAST_FORMAT_HMMSS
+    private static final java.lang.String FAST_FORMAT_MMSS
+    private static final char TIME_PADDING
+    private static final char TIME_SEPARATOR
+    37:37:public CommonHelper()
+    190:192:public static java.lang.String getDateFormatYYYYMMDD(java.util.Date)
+com.athlete.util.HttpPatch
+com.athlete.util.HttpRequest
+com.athlete.util.HttpResult
+com.athlete.util.HttpUtil:
+    public static final int error404
+    public static final int error500
+    public static final int error204
+    public static final int error200
+    public static final int error202
+    public static final int error201
+    private static final int timeout
+    private static final int httpPort
+    private static final int httpsPort
+    private static final int bufferSize
+    private static final java.lang.String headerNameContent
+    private static final java.lang.String headerValueJson
+    private static final java.lang.String headerNameAccept
+    private static final java.lang.String headerNameAuthorixation
+    private static final java.lang.String headerValueGPX
+    private static final java.lang.String headerNameLocation
+    159:177:public static java.lang.String put(java.lang.String,org.json.JSONObject,java.lang.String)
+com.athlete.util.SntpClient:
+    private static final int ORIGINATE_TIME_OFFSET
+    private static final int RECEIVE_TIME_OFFSET
+    private static final int TRANSMIT_TIME_OFFSET
+    private static final int NTP_PACKET_SIZE
+    private static final int NTP_PORT
+    private static final int NTP_MODE_CLIENT
+    private static final int NTP_VERSION
+    private static final long OFFSET_1900_TO_1970
+    139:139:public long getNtpTimeReference()
+    148:148:public long getRoundTripTime()
+com.athlete.util.SystemUtils:
+    22:27:public static java.lang.String getMyTracksVersion(android.content.Context)
+    56:57:private SystemUtils()
+com.athlete.util.ViewServer
+com.athlete.util.ViewServer$NoopViewServer
+com.athlete.util.ViewServer$UncloseableOuputStream
+com.athlete.util.ViewServer$ViewServerWorker
+com.athlete.util.ViewServer$WindowListener
+com.facebook.android.AsyncFacebookRunner:
+    80:99:public void logout(android.content.Context,com.facebook.android.AsyncFacebookRunner$RequestListener,java.lang.Object)
+    102:103:public void logout(android.content.Context,com.facebook.android.AsyncFacebookRunner$RequestListener)
+    137:138:public void request(android.os.Bundle,com.facebook.android.AsyncFacebookRunner$RequestListener,java.lang.Object)
+    168:169:public void request(java.lang.String,com.facebook.android.AsyncFacebookRunner$RequestListener,java.lang.Object)
+    206:207:public void request(java.lang.String,android.os.Bundle,com.facebook.android.AsyncFacebookRunner$RequestListener,java.lang.Object)
+    212:213:public void request(java.lang.String,android.os.Bundle,com.facebook.android.AsyncFacebookRunner$RequestListener)
+com.facebook.android.AsyncFacebookRunner$1
+com.facebook.android.AsyncFacebookRunner$RequestListener:
+    public abstract void onFacebookError(com.facebook.android.FacebookError,java.lang.Object)
+com.facebook.android.DialogError:
+    private static final long serialVersionUID
+    44:44:int getErrorCode()
+    48:48:java.lang.String getFailingUrl()
+com.facebook.android.Facebook:
+    public static final java.lang.String REDIRECT_URI
+    public static final java.lang.String CANCEL_URI
+    public static final java.lang.String TOKEN
+    public static final java.lang.String EXPIRES
+    public static final java.lang.String SINGLE_SIGN_ON_DISABLED
+    public static final int FORCE_DIALOG_AUTH
+    private static final java.lang.String LOGIN
+    private static final int DEFAULT_AUTH_ACTIVITY_CODE
+    public static final java.lang.String FB_APP_SIGNATURE
+    103:105:public void authorize(android.app.Activity,com.facebook.android.Facebook$DialogListener)
+    436:442:public java.lang.String logout(android.content.Context)
+    475:480:public java.lang.String request(android.os.Bundle)
+    501:501:public java.lang.String request(java.lang.String)
+    528:528:public java.lang.String request(java.lang.String,android.os.Bundle)
+    584:585:public void dialog(android.content.Context,java.lang.String,com.facebook.android.Facebook$DialogListener)
+    695:695:public java.lang.String getAppId()
+    699:700:public void setAppId(java.lang.String)
+com.facebook.android.FacebookError:
+    private static final long serialVersionUID
+    private java.lang.String mErrorType
+    37:40:public FacebookError(java.lang.String,java.lang.String,int)
+    43:43:public int getErrorCode()
+    47:47:public java.lang.String getErrorType()
+com.facebook.android.FbDialog:
+    static final int FB_BLUE
+    static final int MARGIN
+    static final int PADDING
+    static final java.lang.String DISPLAY_STRING
+    static final java.lang.String FB_ICON
+com.facebook.android.R:
+    9:9:public R()
+com.facebook.android.R$drawable:
+    public static final int login_down
+    public static final int logout_down
+    public static final int login
+    public static final int logout
+    public static final int facebook_icon
+    10:10:public R$drawable()
+com.facebook.android.Util:
+    48:48:public Util()
+    242:245:public static void clearCookies(android.content.Context)
+    270:299:public static org.json.JSONObject parseJson(java.lang.String)
+com.nostra13.universalimageloader.cache.disc.BaseDiscCache:
+    22:23:public BaseDiscCache(java.io.File)
+    38:44:public void clear()
+com.nostra13.universalimageloader.cache.disc.DiscCacheAware:
+    public abstract void clear()
+com.nostra13.universalimageloader.cache.disc.LimitedDiscCache:
+    38:39:public LimitedDiscCache(java.io.File,int)
+    95:98:public void clear()
+com.nostra13.universalimageloader.cache.disc.impl.FileCountLimitedDiscCache:
+    27:28:public FileCountLimitedDiscCache(java.io.File,int)
+com.nostra13.universalimageloader.cache.disc.impl.LimitedAgeDiscCache
+com.nostra13.universalimageloader.cache.disc.impl.TotalSizeLimitedDiscCache:
+    27:28:public TotalSizeLimitedDiscCache(java.io.File,int)
+com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache:
+    22:23:public UnlimitedDiscCache(java.io.File)
+com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator
+com.nostra13.universalimageloader.cache.memory.impl.FIFOLimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LRULimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LargestLimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LimitedAgeMemoryCache
+com.nostra13.universalimageloader.core.DisplayImageOptions$Builder:
+    99:100:public com.nostra13.universalimageloader.core.DisplayImageOptions$Builder showImageForEmptyUrl(int)
+com.nostra13.universalimageloader.core.ImageLoader:
+    private static final java.lang.String ERROR_WRONG_ARGUMENTS
+    private static final java.lang.String ERROR_NOT_INIT
+    private static final java.lang.String ERROR_INIT_CONFIG_WITH_NULL
+    private static final java.lang.String LOG_LOAD_IMAGE_FROM_MEMORY_CACHE
+    96:97:public void displayImage(java.lang.String,android.widget.ImageView)
+    229:229:public com.nostra13.universalimageloader.cache.memory.MemoryCacheAware getMemoryCache()
+    237:240:public void clearMemoryCache()
+    244:244:public com.nostra13.universalimageloader.cache.disc.DiscCacheAware getDiscCache()
+    252:255:public void clearDiscCache()
+    269:270:public void cancelDisplayTask(android.widget.ImageView)
+    274:280:public void stop()
+com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder:
+    private static final java.lang.String WARNING_OVERLAP_MEMORY_CACHE_SIZE
+    private static final java.lang.String WARNING_MEMORY_CACHE_ALREADY_SET
+    private static final java.lang.String WARNING_OVERLAP_DISC_CACHE_SIZE
+    private static final java.lang.String WARNING_OVERLAP_DISC_CACHE_FILE_COUNT
+    private static final java.lang.String WARNING_OVERLAP_DISC_CACHE_FILE_NAME_GENERATOR
+    private static final java.lang.String WARNING_DISC_CACHE_ALREADY_SET
+    private static final java.lang.String WARNING_OVERLAP_CONNECT_TIMEOUT
+    private static final java.lang.String WARNING_OVERLAP_READ_TIMEOUT
+    private static final java.lang.String WARNING_DOWNLOADER_ALREADY_SET
+    public static final int DEFAULT_HTTP_CONNECT_TIMEOUT
+    public static final int DEFAULT_HTTP_READ_TIMEOUT
+    public static final int DEFAULT_THREAD_POOL_SIZE
+    public static final int DEFAULT_THREAD_PRIORITY
+    public static final int DEFAULT_MEMORY_CACHE_SIZE
+    151:152:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder maxImageWidthForMemoryCache(int)
+    161:162:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder maxImageHeightForMemoryCache(int)
+    170:173:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder httpConnectTimeout(int)
+    181:184:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder httpReadTimeout(int)
+    192:193:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder threadPoolSize(int)
+    202:211:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder threadPriority(int)
+    223:224:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder denyCacheImageMultipleSizesInMemory()
+    234:235:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder offOutOfMemoryHandling()
+    247:251:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder memoryCacheSize(int)
+    262:265:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder memoryCache(com.nostra13.universalimageloader.cache.memory.MemoryCacheAware)
+    277:282:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCacheSize(int)
+    294:300:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCacheFileCount(int)
+    308:311:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCacheFileNameGenerator(com.nostra13.universalimageloader.cache.disc.naming.FileNameGenerator)
+    319:323:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder imageDownloader(com.nostra13.universalimageloader.core.download.ImageDownloader)
+    334:339:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder discCache(com.nostra13.universalimageloader.cache.disc.DiscCacheAware)
+    349:350:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder defaultDisplayImageOptions(com.nostra13.universalimageloader.core.DisplayImageOptions)
+    355:356:public com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder enableLogging()
+com.nostra13.universalimageloader.core.LoadAndDisplayImageTask:
+    private static final java.lang.String LOG_START_DISPLAY_IMAGE_TASK
+    private static final java.lang.String LOG_LOAD_IMAGE_FROM_INTERNET
+    private static final java.lang.String LOG_LOAD_IMAGE_FROM_DISC_CACHE
+    private static final java.lang.String LOG_CACHE_IMAGE_IN_MEMORY
+    private static final java.lang.String LOG_CACHE_IMAGE_ON_DISC
+    private static final java.lang.String LOG_DISPLAY_IMAGE_IN_IMAGEVIEW
+    private static final int ATTEMPT_COUNT_TO_DECODE_BITMAP
+com.nostra13.universalimageloader.core.assist.DecodingType:
+    9:9:public static com.nostra13.universalimageloader.core.assist.DecodingType valueOf(java.lang.String)
+com.nostra13.universalimageloader.core.assist.FailReason:
+    8:8:public static com.nostra13.universalimageloader.core.assist.FailReason[] values()
+    8:8:public static com.nostra13.universalimageloader.core.assist.FailReason valueOf(java.lang.String)
+com.nostra13.universalimageloader.core.assist.ImageSize:
+    private static final java.lang.String TO_STRING_PATTERN
+com.nostra13.universalimageloader.core.assist.MemoryCacheKeyUtil:
+    private static final java.lang.String URL_AND_SIZE_SEPARATOR
+    private static final java.lang.String MEMORY_CACHE_KEY_FORMAT
+    10:10:public MemoryCacheKeyUtil()
+com.nostra13.universalimageloader.core.download.HttpClientImageDownloader
+com.nostra13.universalimageloader.core.download.ImageDownloader:
+    protected static final java.lang.String PROTOCOL_FILE
+com.nostra13.universalimageloader.utils.FileUtils:
+    private static final int BUFFER_SIZE
+    16:17:private FileUtils()
+com.nostra13.universalimageloader.utils.StorageUtils:
+    private static final java.lang.String INDIVIDUAL_DIR_NAME
+    21:22:private StorageUtils()
+    75:82:public static java.io.File getOwnCacheDirectory(android.content.Context,java.lang.String)
+com.segment.SegmentAdapter:
+    public static final int PINNED_HEADER_GONE
+    public static final int PINNED_HEADER_VISIBLE
+    public static final int PINNED_HEADER_PUSHED_UP
+    72:73:public void setInitialPage(int)
+    80:81:public void resetPage()
+    87:88:public void nextPage()
+    121:124:public void notifyNoMorePages()
+    127:130:public void notifyMayHaveMorePages()
+    public abstract java.lang.Object[] getSections()
+com.segment.SegmentAdapter$HasMorePagesListener:
+    public abstract void noMorePages()
+    public abstract void mayHaveMorePages()
+com.segment.SegmentListView:
+    android.view.View listFooter
+    132:133:public void setLoadingView(android.view.View)
+    136:136:public android.view.View getLoadingView()
+    168:172:public void noMorePages()
+    176:180:public void mayHaveMorePages()
+    183:183:public boolean isLoadingViewVisible()
+kankan.wheel.R:
+    9:9:public R()
+kankan.wheel.R$drawable:
+    10:10:public R$drawable()
+kankan.wheel.widget.WheelAdapter
+kankan.wheel.widget.WheelScroller:
+    private static final int SCROLLING_DURATION
+    public static final int MIN_DELTA_FOR_SCROLLING
+    101:103:public void setInterpolator(android.view.animation.Interpolator)
+kankan.wheel.widget.WheelView:
+    private static final int ITEM_OFFSET_PERCENT
+    private static final int PADDING
+    private static final int DEF_VISIBLE_ITEMS
+    179:180:public void setInterpolator(android.view.animation.Interpolator)
+    188:188:public int getVisibleItems()
+    200:201:public void setVisibleItems(int)
+    261:262:public void removeChangingListener(kankan.wheel.widget.OnWheelChangedListener)
+    285:286:public void addScrollingListener(kankan.wheel.widget.OnWheelScrollListener)
+    295:296:public void removeScrollingListener(kankan.wheel.widget.OnWheelScrollListener)
+    333:334:public void removeClickingListener(kankan.wheel.widget.OnWheelClickedListener)
+    951:952:public void stopScrolling()
+kankan.wheel.widget.adapters.AbstractWheelAdapter:
+    57:62:protected void notifyDataChangedEvent()
+    68:73:protected void notifyDataInvalidatedEvent()
+kankan.wheel.widget.adapters.AbstractWheelTextAdapter:
+    public static final int TEXT_VIEW_ITEM_RESOURCE
+    protected static final int NO_RESOURCE
+    public static final int DEFAULT_TEXT_COLOR
+    public static final int LABEL_COLOR
+    public static final int DEFAULT_TEXT_SIZE
+    public static final int DEFAULT_TEXT_GRAVITY
+    114:114:public int getTextColor()
+    124:125:public void setTextColor(int)
+    132:132:public int getTextGravity()
+    141:141:public int getTextSize()
+    160:160:public int getItemResource()
+    170:171:public void setItemResource(int)
+    179:179:public int getItemTextResource()
+    189:190:public void setItemTextResource(int)
+    198:198:public int getEmptyItemResource()
+    208:209:public void setEmptyItemResource(int)
+kankan.wheel.widget.adapters.AdapterWheel
+kankan.wheel.widget.adapters.DoubleWheelAdapter:
+    public static final double DEFAULT_MAX_VALUE
+    private static final double DEFAULT_MIN_VALUE
+    private static final double DEFAULT_STEP_VALUE
+kankan.wheel.widget.adapters.NumericWheelAdapter:
+    public static final int DEFAULT_MAX_VALUE
+    private static final int DEFAULT_MIN_VALUE
+org.achartengine.ChartFactory:
+    public static final java.lang.String CHART
+    public static final java.lang.String TITLE
+    51:53:private ChartFactory()
+    68:70:public static final org.achartengine.GraphicalView getLineChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    104:106:public static final org.achartengine.GraphicalView getScatterChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    122:124:public static final org.achartengine.GraphicalView getBubbleChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    142:145:public static final org.achartengine.GraphicalView getTimeChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    162:164:public static final org.achartengine.GraphicalView getBarChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type)
+    181:183:public static final org.achartengine.GraphicalView getRangeBarChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type)
+    200:207:public static final org.achartengine.GraphicalView getCombinedXYChartView(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String[])
+    224:226:public static final org.achartengine.GraphicalView getPieChartView(android.content.Context,org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer)
+    243:245:public static final org.achartengine.GraphicalView getDialChartView(android.content.Context,org.achartengine.model.CategorySeries,org.achartengine.renderer.DialRenderer)
+    262:264:public static final org.achartengine.GraphicalView getDoughnutChartView(android.content.Context,org.achartengine.model.MultipleCategorySeries,org.achartengine.renderer.DefaultRenderer)
+    282:282:public static final android.content.Intent getLineChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    300:300:public static final android.content.Intent getCubicLineChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,float)
+    317:317:public static final android.content.Intent getScatterChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    334:334:public static final android.content.Intent getBubbleChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    353:353:public static final android.content.Intent getTimeChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    371:371:public static final android.content.Intent getBarChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type)
+    392:397:public static final android.content.Intent getLineChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    419:424:public static final android.content.Intent getCubicLineChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,float,java.lang.String)
+    442:447:public static final android.content.Intent getScatterChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    465:470:public static final android.content.Intent getBubbleChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String)
+    490:496:public static final android.content.Intent getTimeChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String,java.lang.String)
+    515:520:public static final android.content.Intent getBarChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type,java.lang.String)
+    540:545:public static final android.content.Intent getRangeBarChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,org.achartengine.chart.BarChart$Type,java.lang.String)
+    565:575:public static final android.content.Intent getCombinedXYChartIntent(android.content.Context,org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer,java.lang.String[],java.lang.String)
+    593:598:public static final android.content.Intent getPieChartIntent(android.content.Context,org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer,java.lang.String)
+    616:621:public static final android.content.Intent getDoughnutChartIntent(android.content.Context,org.achartengine.model.MultipleCategorySeries,org.achartengine.renderer.DefaultRenderer,java.lang.String)
+    639:644:public static final android.content.Intent getDialChartIntent(android.content.Context,org.achartengine.model.CategorySeries,org.achartengine.renderer.DialRenderer,java.lang.String)
+    675:680:private static void checkParameters(org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer)
+    692:697:private static void checkParameters(org.achartengine.model.MultipleCategorySeries,org.achartengine.renderer.DefaultRenderer)
+    700:705:private static boolean checkMultipleSeriesItems(org.achartengine.model.MultipleCategorySeries,int)
+org.achartengine.GraphicalView:
+    135:135:public org.achartengine.model.SeriesSelection getCurrentSeriesAndPoint()
+    145:149:public double[] toRealPoint(int)
+    186:190:public void setZoomRate(float)
+    231:240:public void addZoomListener(org.achartengine.tools.ZoomListener,boolean,boolean)
+    248:253:public synchronized void removeZoomListener(org.achartengine.tools.ZoomListener)
+    261:262:public void addPanListener(org.achartengine.tools.PanListener)
+    270:271:public void removePanListener(org.achartengine.tools.PanListener)
+    313:318:public void repaint(int,int,int,int)
+    326:334:public android.graphics.Bitmap toBitmap()
+org.achartengine.GraphicalView$2
+org.achartengine.ITouchHandler:
+    public abstract void addZoomListener(org.achartengine.tools.ZoomListener)
+    public abstract void removeZoomListener(org.achartengine.tools.ZoomListener)
+    public abstract void addPanListener(org.achartengine.tools.PanListener)
+    public abstract void removePanListener(org.achartengine.tools.PanListener)
+org.achartengine.TouchHandler:
+    167:170:public void addZoomListener(org.achartengine.tools.ZoomListener)
+    178:181:public void removeZoomListener(org.achartengine.tools.ZoomListener)
+    189:192:public void addPanListener(org.achartengine.tools.PanListener)
+    200:203:public void removePanListener(org.achartengine.tools.PanListener)
+org.achartengine.TouchHandlerOld:
+    105:105:public void addZoomListener(org.achartengine.tools.ZoomListener)
+    113:113:public void removeZoomListener(org.achartengine.tools.ZoomListener)
+    121:124:public void addPanListener(org.achartengine.tools.PanListener)
+    132:135:public void removePanListener(org.achartengine.tools.PanListener)
+org.achartengine.chart.AbstractChart:
+    336:346:private java.lang.String getFitText(java.lang.String,float,android.graphics.Paint)
+    389:434:protected void drawLabel(android.graphics.Canvas,java.lang.String,org.achartengine.renderer.DefaultRenderer,java.util.List,int,int,float,float,float,float,int,int,int,android.graphics.Paint)
+    449:449:public org.achartengine.model.SeriesSelection getSeriesAndPointForScreenCoordinate(org.achartengine.model.Point)
+org.achartengine.chart.BarChart
+org.achartengine.chart.BarChart$Type
+org.achartengine.chart.BubbleChart
+org.achartengine.chart.ClickableArea:
+    33:33:public android.graphics.RectF getRect()
+    37:37:public double getX()
+    41:41:public double getY()
+org.achartengine.chart.CombinedXYChart
+org.achartengine.chart.CubicLineChart:
+    public static final java.lang.String TYPE
+    117:117:public java.lang.String getChartType()
+org.achartengine.chart.DialChart
+org.achartengine.chart.DoughnutChart
+org.achartengine.chart.LineChart:
+    public static final java.lang.String TYPE
+    private static final int SHAPE_WIDTH
+    61:63:protected void setDatasetRenderer(org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    167:167:public java.lang.String getChartType()
+org.achartengine.chart.PieChart
+org.achartengine.chart.PieMapper
+org.achartengine.chart.PieSegment
+org.achartengine.chart.PointStyle:
+    21:21:public static org.achartengine.chart.PointStyle valueOf(java.lang.String)
+    62:70:public static org.achartengine.chart.PointStyle getPointStyleForName(java.lang.String)
+    79:87:public static int getIndexForName(java.lang.String)
+org.achartengine.chart.RangeBarChart
+org.achartengine.chart.RoundChart:
+    protected static final int SHAPE_WIDTH
+    protected org.achartengine.model.CategorySeries mDataset
+    protected static final int NO_VALUE
+    49:52:public RoundChart(org.achartengine.model.CategorySeries,org.achartengine.renderer.DefaultRenderer)
+    64:71:public void drawTitle(android.graphics.Canvas,int,int,int,android.graphics.Paint)
+org.achartengine.chart.ScatterChart:
+    public static final java.lang.String TYPE
+    private static final float SIZE
+    private static final int SHAPE_WIDTH
+    58:60:protected void setDatasetRenderer(org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    263:263:public java.lang.String getChartType()
+org.achartengine.chart.TimeChart
+org.achartengine.chart.XYChart:
+    92:94:protected void setDatasetRenderer(org.achartengine.model.XYMultipleSeriesDataset,org.achartengine.renderer.XYMultipleSeriesRenderer)
+    438:438:protected android.graphics.Rect getScreenR()
+    442:443:protected void setScreenR(android.graphics.Rect)
+    774:775:public void setCalcRange(double[],int)
+    778:778:public double[] toRealPoint(float,float)
+    782:782:public double[] toScreenPoint(double[])
+    812:824:public double[] toScreenPoint(double[],int)
+    830:848:public org.achartengine.model.SeriesSelection getSeriesAndPointForScreenCoordinate(org.achartengine.model.Point)
+    902:902:public double getDefaultMinimum()
+    public abstract java.lang.String getChartType()
+org.achartengine.model.CategorySeries
+org.achartengine.model.MultipleCategorySeries
+org.achartengine.model.RangeCategorySeries
+org.achartengine.model.SeriesSelection
+org.achartengine.model.TimeSeries
+org.achartengine.model.XYMultipleSeriesDataset:
+    45:46:public synchronized void addSeries(int,org.achartengine.model.XYSeries)
+    54:55:public synchronized void removeSeries(int)
+    63:64:public synchronized void removeSeries(org.achartengine.model.XYSeries)
+org.achartengine.model.XYSeries:
+    53:54:public XYSeries(java.lang.String)
+    116:117:public void setTitle(java.lang.String)
+    136:142:public synchronized void remove(int)
+    148:150:public synchronized void clear()
+org.achartengine.model.XYValueSeries
+org.achartengine.renderer.DefaultRenderer:
+    public static final int NO_COLOR
+    public static final int BACKGROUND_COLOR
+    public static final int TEXT_COLOR
+    122:123:public void setChartTitle(java.lang.String)
+    140:141:public void setChartTitleTextSize(float)
+    159:160:public void addSeriesRenderer(int,org.achartengine.renderer.SimpleSeriesRenderer)
+    168:169:public void removeSeriesRenderer(org.achartengine.renderer.SimpleSeriesRenderer)
+    196:196:public org.achartengine.renderer.SimpleSeriesRenderer[] getSeriesRenderers()
+    214:215:public void setBackgroundColor(int)
+    232:233:public void setApplyBackgroundColor(boolean)
+    250:251:public void setAxesColor(int)
+    269:270:public void setLabelsColor(int)
+    287:288:public void setLabelsTextSize(float)
+    350:351:public void setShowGridX(boolean)
+    359:360:public void setShowGridY(boolean)
+    368:370:public void setShowGrid(boolean)
+    387:388:public void setShowCustomTextGrid(boolean)
+    423:424:public void setFitLegend(boolean)
+    459:460:public void setLegendTextSize(float)
+    469:471:public void setTextTypeface(java.lang.String,int)
+    534:535:public void setZoomEnabled(boolean)
+    552:553:public void setZoomButtonsVisible(boolean)
+    570:571:public void setExternalZoomEnabled(boolean)
+    597:598:public void setPanEnabled(boolean)
+    606:607:public void setZoomRate(float)
+    660:661:public void setLegendHeight(int)
+    699:700:public void setInScroll(boolean)
+    710:710:public float getStartAngle()
+    721:722:public void setStartAngle(float)
+org.achartengine.renderer.DialRenderer
+org.achartengine.renderer.DialRenderer$Type
+org.achartengine.renderer.SimpleSeriesRenderer:
+    private double mGradientStartValue
+    private int mGradientStartColor
+    private double mGradientStopValue
+    private int mGradientStopColor
+    83:84:public void setDisplayChartValues(boolean)
+    101:102:public void setChartValuesTextSize(float)
+    120:121:public void setChartValuesTextAlign(android.graphics.Paint$Align)
+    138:139:public void setChartValuesSpacing(float)
+    156:157:public void setStroke(org.achartengine.renderer.BasicStroke)
+    164:164:public boolean isGradientEnabled()
+    172:173:public void setGradientEnabled(boolean)
+    180:180:public double getGradientStartValue()
+    188:188:public int getGradientStartColor()
+    197:199:public void setGradientStart(double,int)
+    206:206:public double getGradientStopValue()
+    214:214:public int getGradientStopColor()
+    223:225:public void setGradientStop(double,int)
+org.achartengine.renderer.XYMultipleSeriesRenderer:
+    168:169:public void setOrientation(org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation)
+    186:187:public void setXTitle(java.lang.String)
+    214:215:public void setYTitle(java.lang.String)
+    224:225:public void setYTitle(java.lang.String,int)
+    242:243:public void setAxisTitleTextSize(float)
+    251:251:public double getXAxisMin()
+    260:261:public void setXAxisMin(double)
+    269:269:public boolean isMinXSet()
+    278:278:public double getXAxisMax()
+    287:288:public void setXAxisMax(double)
+    296:296:public boolean isMaxXSet()
+    305:305:public double getYAxisMin()
+    323:323:public boolean isMinYSet()
+    332:332:public double getYAxisMax()
+    350:350:public boolean isMaxYSet()
+    500:501:public void setXLabels(int)
+    511:512:public void addTextLabel(double,java.lang.String)
+    521:522:public void addXTextLabel(double,java.lang.String)
+    549:550:public void clearTextLabels()
+    556:557:public void clearXTextLabels()
+    566:567:public void addYTextLabel(double,java.lang.String)
+    577:578:public void addYTextLabel(double,java.lang.String,int)
+    587:587:public java.lang.String getYTextLabel(java.lang.Double)
+    607:607:public java.lang.Double[] getYTextLabelLocations()
+    624:625:public void clearYTextLabels()
+    642:643:public void setYLabels(int)
+    652:656:public void setDisplayChartValues(boolean)
+    665:669:public void setChartValuesTextSize(float)
+    705:707:public void setPanEnabled(boolean,boolean)
+    743:745:public void setZoomEnabled(boolean,boolean)
+    754:754:public double getBarsSpacing()
+    763:763:public double getBarSpacing()
+    774:775:public void setBarSpacing(double)
+    810:811:public void setGridColor(int)
+    830:831:public void setPanLimits(double[])
+    850:851:public void setZoomLimits(double[])
+    868:869:public void setXLabelsAngle(float)
+    886:887:public void setYLabelsAngle(float)
+    904:905:public void setPointSize(float)
+    908:909:public void setRange(double[])
+    945:945:public double[] getInitialRange()
+    965:966:public void setInitialRange(double[])
+    976:977:public void setInitialRange(double[],int)
+    1003:1004:public void setXLabelsColor(int)
+    1013:1014:public void setYLabelsColor(int,int)
+    1031:1032:public void setXLabelsAlign(android.graphics.Paint$Align)
+    1045:1046:public void setYLabelsAlign(android.graphics.Paint$Align)
+    1053:1054:public void setYAxisAlign(android.graphics.Paint$Align,int)
+    1062:1063:public void setYLabelsAlign(android.graphics.Paint$Align,int)
+org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation:
+    97:97:public static org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation[] values()
+    97:97:public static org.achartengine.renderer.XYMultipleSeriesRenderer$Orientation valueOf(java.lang.String)
+org.achartengine.renderer.XYSeriesRenderer:
+    53:54:public void setFillBelowLine(boolean)
+    89:90:public void setFillBelowLineColor(int)
+    107:108:public void setPointStyle(org.achartengine.chart.PointStyle)
+org.achartengine.tools.Pan:
+    157:158:public synchronized void addPanListener(org.achartengine.tools.PanListener)
+    166:167:public synchronized void removePanListener(org.achartengine.tools.PanListener)
+org.achartengine.tools.Zoom:
+    public static final int ZOOM_AXIS_XY
+    public static final int ZOOM_AXIS_X
+    public static final int ZOOM_AXIS_Y
+    177:178:public synchronized void addZoomListener(org.achartengine.tools.ZoomListener)
+    186:187:public synchronized void removeZoomListener(org.achartengine.tools.ZoomListener)
+org.achartengine.tools.ZoomEvent:
+    45:45:public boolean isZoomIn()
+    54:54:public float getZoomRate()
+org.achartengine.util.IndexXYMap:
+    54:54:public double getMaxXDifference()
+    91:92:public org.achartengine.util.XYEntry getByIndex(int)
+    101:102:public org.achartengine.util.XYEntry removeByIndex(int)
+org.achartengine.util.MathHelper:
+    public static final double NULL_VALUE
+    35:37:private MathHelper()
+    46:57:public static double[] minmax(java.util.List)
+org.achartengine.util.XYEntry
+org.acra.DropBoxCollector:
+    37:37:DropBoxCollector()
+org.acra.DumpSysCollector:
+    31:31:DumpSysCollector()
+org.acra.LogCatCollector:
+    private static final int DEFAULT_TAIL_COUNT
+    37:37:LogCatCollector()
+org.acra.util.Base64$Coder:
+    public abstract boolean process(byte[],int,int,boolean)
+    public abstract int maxOutputSize(int)
+org.acra.util.Base64$Decoder:
+    private static final int SKIP
+    private static final int EQUALS
+    254:254:public int maxOutputSize(int)
+org.acra.util.Base64$Encoder:
+    public static final int LINE_GROUPS
+    600:600:public int maxOutputSize(int)

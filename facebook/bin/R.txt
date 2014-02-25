@@ -1,0 +1,6 @@
+int drawable close 0x7f020000
+int drawable facebook_icon 0x7f020001
+int drawable login 0x7f020002
+int drawable login_down 0x7f020003
+int drawable logout 0x7f020004
+int drawable logout_down 0x7f020005

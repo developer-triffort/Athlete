@@ -1,0 +1,24 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <nine-patch
+            android:src="@drawable/diagram_bg_long"
+           />
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="2dip" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#54A1C7"
+                    android:centerY="0.75"
+                    android:endColor="#54A1C7"
+                    android:startColor="#54A1C7" >
+                </gradient>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

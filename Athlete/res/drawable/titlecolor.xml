@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style
+    name="Widget.DefaultTitlePageIndicator"
+    parent="@style/Widget.TabPageIndicator" >
+
+    <item name="selectedColor">
+?android:attr/textColorPrimary
+    </item>
+    <item name="footerColor">
+?android:attr/textColorPrimary
+    </item>
+    <item name="footerIndicatorStyle">
+underline
+    </item>
+    <item name="footerIndicatorHeight">
+4dp
+    </item>
+    <item name="footerLineHeight">
+2dp
+    </item>
+    <item name="footerPadding">
+8dp
+    </item>
+
+</style>

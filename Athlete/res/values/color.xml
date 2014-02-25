@@ -1,0 +1,8 @@
+<resources>
+
+    <color name="BLUE_TEXT">#54a1c7</color>
+    <color name="tab_blue_text_shadow">#c0dfee</color>
+    <color name="comment_separator">#DCDDDE</color>
+ <color name="grey">#ACABAA</color>
+ <color name="orange_route_details">#F0683A</color>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="at_running">Running</string>
+    <string name="at_walking">Walking</string>
+    <string name="at_cycling">Cycling</string>
+    <string name="at_hiking">Hiking</string>
+    <string name="at_mountain_biking">Mountain Biking</string>
+    <string name="at_wheelchair">Wheelchair</string>
+    <string name="at_paddling">Paddling</string>
+    <string name="at_x_country_skiing">X-Country Skiing</string>
+    <string name="at_downhill_skiing">Downhill Skiing</string>
+    <string name="at_snowboarding">Snowboarding</string>
+    <string name="at_swimming">Swimming</string>
+</resources>

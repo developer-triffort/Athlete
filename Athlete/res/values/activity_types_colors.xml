@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_activity_type_color">#54a1c7</color>
+    <color name="fallback_missing_activity_type">#777777</color>
+
+    <!-- Common -->
+    <color name="race">#75599c</color>
+    <color name="endurance">#54a1c7</color>
+    <color name="leisure">#c5bc19</color>
+    <color name="tempo">#f6921e</color>
+    <color name="interval">#6ab9bb</color>
+    <color name="group">#beb688</color>
+    <color name="intense">#f68712</color>
+    <color name="cross_country">#5ba1ce</color>
+    <color name="climbing">#f25228</color>
+    <color name="downhill">#f25228</color>
+    <color name="all_mountain">#5ba1ce</color>
+    <color name="backcountry">#ca252c</color>
+    <color name="slalom">#f68712</color>
+    <color name="gs">#9c9a9b</color>
+    <color name="bumps">#3e8baa</color>
+    <color name="park">#b9b675</color>
+
+    <!-- Running -->
+    <color name="elevation">#f0683a</color>
+    <color name="slow">#cdba3d</color>
+
+    <!-- Walking -->
+    <color name="moderate">#5ba1ce</color>
+    <color name="dog_walking">#b9b675</color>
+    <color name="speed_walking">#ca252c</color>
+
+    <!-- Cycling -->
+    <color name="recovery">#9c9a9b</color>
+    <color name="spin">#ca252c</color>
+
+    <!-- Hiking -->
+    <color name="backpacking">#f25228</color>
+    <color name="alpine">#ca252c</color>
+    <color name="ruck">#9c9a9b</color>
+
+    <!-- Mountain Biking -->
+    <!-- Wheelchair -->
+
+    <!-- Paddling -->
+    <color name="kayaking">#5ba1ce</color>
+    <color name="canoeing">#b9b675</color>
+    <color name="sup">#6cc0ba</color>
+    <color name="rafting">#f68163</color>
+
+    <!-- X-Country Skiing -->
+    <color name="skate">#f68712</color>
+    <color name="skate_v_granny">#3e8baa</color>
+    <color name="skate_v1_offset">#6cc0ba</color>
+    <color name="skate_v2_wassberg">#b9b675</color>
+    <color name="v2a_mogren">#9c9a9b</color>
+
+    <!-- Downhill Skiing -->
+    <color name="telemark">#c5bc19</color>
+    <color name="randonee">#6cc0ba</color>
+
+    <!-- Snowboarding -->
+
+    <!-- Swimming -->
+    <color name="pool">#5ba1ce</color>
+    <color name="open_water">#ca252c</color>
+    <color name="freestyle">#f25228</color>
+    <color name="breast">#3e8baa</color>
+    <color name="back">#c5bc19</color>
+    <color name="im">#6cc0ba</color>
+    <color name="fly">#f68712</color>
+    <color name="kick">#9c9a9b</color>
+    <color name="kick_w_fins">#b9b675</color>
+</resources>

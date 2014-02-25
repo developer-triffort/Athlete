@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.athlete"
+    android:installLocation="auto"
+    android:versionCode="5"
+    android:versionName="@string/version_num" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <permission
+        android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE" />
+    <!-- Permission to initialize services -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Permissions to record locations -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Permissions to access sensors -->
+    <uses-permission android:name="com.dsi.ant.permission.ANT" />
+    <uses-permission android:name="com.dsi.ant.permission.ANT_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- Permissions to upload tracks -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.athlete.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- Permission to read phone state so voice announcement will not interrupt ongoing calls -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Permission to write to SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permission to read contacts -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Permissions to access My Tracks data -->
+    <uses-permission android:name="com.athlete.google.android.apps.mytracks.MYTRACKS_NOTIFICATIONS" />
+    <uses-permission android:name="com.athlete.google.android.apps.mytracks.READ_TRACK_DATA" />
+    <uses-permission android:name="com.athlete.google.android.apps.mytracks.WRITE_TRACK_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <!-- Permission to receive My Tracks internal broadcasts -->
+    <permission
+        android:name="com.athlete.google.android.apps.mytracks.MYTRACKS_NOTIFICATIONS"
+        android:description="@string/permission_notification_label"
+        android:label="@string/permission_notification_label"
+        android:permissionGroup="android.permission-group.LOCATION"
+        android:protectionLevel="signature" />
+    <!-- Permission to read track data -->
+    <permission
+        android:name="com.athlete.google.android.apps.mytracks.READ_TRACK_DATA"
+        android:description="@string/permission_read_description"
+        android:label="@string/permission_read_label"
+        android:permissionGroup="android.permission-group.LOCATION"
+        android:protectionLevel="dangerous" />
+    <!-- Permission to receive track start/end broadcasts -->
+    <permission
+        android:name="com.athlete.google.android.apps.mytracks.TRACK_NOTIFICATIONS"
+        android:description="@string/permission_notification_description"
+        android:label="@string/permission_notification_label"
+        android:permissionGroup="android.permission-group.LOCATION"
+        android:protectionLevel="dangerous" />
+    <!-- Permission to write track data, either directly or through service calls -->
+    <permission
+        android:name="com.athlete.google.android.apps.mytracks.WRITE_TRACK_DATA"
+        android:description="@string/permission_write_description"
+        android:label="@string/permission_write_label"
+        android:permissionGroup="android.permission-group.LOCATION"
+        android:protectionLevel="dangerous" />
+    <!-- Required features -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <!-- Optional features -->
+    <uses-feature
+        android:name="android.hardware.faketouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony.gsm"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".AthleteApplication"
+        android:debuggable="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <!-- google Apikey -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCJXtPvYBNS-02HyTe4YTnE7wkiT6ltwps" />
+        <!--AIzaSyCKg_WrcnfP0I105X1CGHoiJsxT7w45XEI -->
+
+        <activity
+            android:name=".activity.ActivityWelcome"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TabActivityMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.feed.TabActivityFeed"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name="com.athlete.activity.track.TabActivityTrack"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.athlete.activity.track.music.FragmentActivityAllMusic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.athlete.activity.track.music.ActivityMusicSongs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.feed.ActivityFeedFeatured"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.feed.ActivityFeedFriends"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.log.ActivityLog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.feed.ActivityFeedLocal"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.setup.ActivityAudioTiming"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.setup.ActivityLocation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.setup.ActivitySetup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.user.ActivityUserDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.user.ActivityFriendInviteFacebook"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.user.ActivityFriendInviteContact"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.user.ActivityFriendInvite"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.user.ActivityChooseFriend"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.user.ActivityFriend"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.user.ActivitySearchUsers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.setup.ActivityMetric"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.setup.ActivityCountDount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivityAuthPagers"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivitySignupDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivityLogin"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivitySignupDetailsWhy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivitySignupDetailsTermsOfUse"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivitySignupDetailsGender"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivitySignupDetailsWeight"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.msg.ActivityNewMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.athlete.activity.track.ActivitySplits"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.athlete.activity.track.details.BaseTrackDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.details.ActivityGallery"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.music.ActivityMusic"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.music.TabActivityMusic"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.music.FragmentSongs"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.music.FragmentActivityRunning"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.details.ActivitySplitsDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.details.ActivityRouteDetails"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.athlete.activity.track.ActivityManual"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.athlete.activity.track.ActivityPicker"
+            android:label="@string/distance_label"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.athlete.activity.track.ActivityTimePicker"
+            android:label="@string/duration_label"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.athlete.google.android.apps.mytracks.io.file.SaveActivity"
+            android:label="@string/duration_label"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.athlete.activity.track.ActivityMapTrack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.track.MockGpsProviderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.msg.ActivityMSGs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.msg.ActivityMSGFromEmail"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="staging.athlete.com"
+                    android:pathPrefix="/messages/"
+                    android:scheme="http" />
+                <data
+                    android:host="www.athlete.com"
+                    android:pathPrefix="/messages/"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.msg.ActivityConversation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name=".activity.auth.ActivitySignupDetailsBD"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name=".activity.auth.ActivitySignup"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" />
+        <activity
+            android:name="com.athlete.google.android.apps.mytracks.TrackEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+
+        <!-- Services -->
+        <service
+            android:name="com.athlete.google.android.apps.mytracks.services.ControlRecordingService"
+            android:exported="false" />
+        <service android:name="com.athlete.google.android.apps.mytracks.services.RemoveTempFilesService" />
+        <service
+            android:name="com.athlete.google.android.apps.mytracks.services.TrackRecordingService"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/my_tracks_recording_service"
+            android:permission="com.athlete.google.android.apps.mytracks.WRITE_TRACK_DATA" />
+        <!-- Receivers -->
+        <receiver android:name="com.athlete.google.android.apps.mytracks.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Providers -->
+        <!-- My Tracks data provider -->
+        <provider
+            android:name="com.athlete.google.android.apps.mytracks.content.MyTracksProvider"
+            android:authorities="com.athlete.google.android.maps.mytracks"
+            android:exported="true"
+            android:readPermission="com.athlete.google.android.apps.mytracks.READ_TRACK_DATA"
+            android:writePermission="com.athlete.google.android.apps.mytracks.WRITE_TRACK_DATA" />
+
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+</manifest>

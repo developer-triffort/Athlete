@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="5dp"
+    android:background="@null"
+    android:clickable="false"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="false" >
+
+        <ProgressBar
+            android:id="@+id/progressBarAVGPace"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:clickable="false"
+            android:progressDrawable="@drawable/splits_progress" />
+
+        <TextView
+            android:id="@+id/txtAvgPace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtClimb"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/diagram_bg_short"
+        android:clickable="false"
+        android:drawableLeft="@drawable/splits_arrow_up"
+        android:drawablePadding="2dp"
+        android:gravity="right|center_vertical"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bar" >
+
+        <ImageButton
+            android:id="@+id/btnNewMessage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@android:id/tabs"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@android:id/tabs"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/top_bar_tab_3"
+            android:src="@drawable/messages_write" />
+
+        <RelativeLayout
+            android:id="@+id/relativeProgress"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/relativeCircle"
+                android:layout_width="45dp"
+                android:layout_height="45dp" android:visibility="gone" 
+                android:background="@drawable/top_bar_tab_3" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/loading_medium_logo" />
+
+                <ImageView
+                    android:id="@+id/imVLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/loading_medium_circle" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/btnResresh"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/top_bar_tab_3"
+                android:src="@drawable/icon_refresh"
+               />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/messages"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:cacheColorHint="@null"
+        android:divider="@null" />
+
+</LinearLayout>
